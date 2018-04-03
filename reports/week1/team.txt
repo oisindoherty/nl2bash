@@ -1,0 +1,10 @@
+Weekly status reports help to keep your boss, the executives, the customers, and yourselves informed about your progress. It ensures that you understand your problems, notice if you are unproductive, and get help.
+
+Just like in a real software development project, your team will provide a brief team status update to management each week. Additionally, you will send an individual status update to your team each week. The team status update must fit on a single page, and most individual status updates will, too.
+
+Each status update should have three sections. Each section is typically about the size of a paragraph, but it can be organized as bullet points or in some other clear way.
+
+The first section is easy. It should be an exact copy of the third section from last week — that is, your goals from a week ago. (The first week, it can be empty.)
+The second section should report the progress you've made this week: what you've done, what worked, what you learned, where you had trouble, and where you are stuck.
+The third section should outline your plans and goals for the following week (including, in the team report, who is responsible). Bullet points are fine. If tasks from one week aren't yet complete, they should roll over into your tasks for the next week. It's good to include some less-detailed longer-range schedule items in this list as well, so that you don't think just about the next week.
+You might find it helpful to read the more detailed instructions for writing a research status report from which the CSE 403 guidelines have been adapted.
