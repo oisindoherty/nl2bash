@@ -1,0 +1,13 @@
+Abhinav Gottumukkala (anak4569)
+
+Individual Status Report - Week 3
+
+	Copy of Individual Status Report Goals: empty because this is the first individual status report.
+
+	As stated in the first team status report, we started by setting up communication channels, this repository and our meeting times. We settled on Discord for communication and a flexible meeting each on Tuesday and Thursday. Afterwards, we worked on our project proposal and got feedback on it. In the received comments, one was specifically about the part I had written; I had used vague language and only gave a mediocre explanation about how two ideas weren't contradictory. I'll try to make a similar mistake again. After the proposal, we split up the initial research we had to do into 3 sections: data collection, data formatting and automatic verification. I chose to research automatic verification. I was sick on Monday, so the Tuesday meeting will be pretty important to get myself on track.
+
+	Goals:
+		- Do research on automated verification strategies, as per the proposal's description.
+		- Discuss with my team and mentor in the Tuesday/Thursday meetings to be ready for the "Proj3: Architecture and implementation plan" due on Thursday.
+			- Specifically, as we're already conceptually divided the project into 3 parts, formalize it with some sort of schedule/plan.
+			- Each person should have some starting ideas on how a team of 3 could do each component.
