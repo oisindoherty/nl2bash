@@ -1,0 +1,11 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 3 Individual Report
+
+Goals from Last Week:
+
+    While there were no individual goals from last week, our team goals from last week included finding time to meet as a group. Another goal from last week was to decide which direction to take the project in, either improving the quality of the dataset used by Tellina, or developing an automated data collection process. 
+
+    In this last week, we met with Calvin, who gave us some advice on how to get started and how to think about writing the project proposal. We then spent Thursday collaborating online to write the project proposal. We decided to go with the second of the two project directions listed above: developing a tool to expand the data set used by Tellina. After further discussion, we decided that the project will be broken up into three parts: collecting the data, verifying the data, and formatting the data. We each took one of these three parts today, and began doing research specifically on our respective parts. I took the formatting part, so I have started taking a closer look at the repository for Tellina, and taking notes on how the dataset used to train Tellina is formatted and structured.
+
+    In the next week, we plan to add more detail to our project architecture plans. We will meet, either in-person or online, to discuss what each of us found when researching and preparing to start designing our respective parts of the project. The next time we meet, we will write up more concrete design plans based on our individual research. We will also continue communicating over discord to keep each other up to date on our progress. 
