@@ -1,0 +1,19 @@
+﻿Abhinav Gottumukkala (anak4569)
+Lauren Martini (lmartini)
+Oisin Doherty (oisind)
+
+Team Status Report: Week 3
+
+Goals from Last Week:
+
+	The next major deadline that we’re facing is the Project Proposal due on April 5th. Considering this, our goal for the coming week is to decide on which direction we want to take our project. Michael sent us an email detailing two such ways: either improving the quality of the dataset or automating the collection of data for tools such as Tellina. Although both directions are very interesting, they are two entirely separate projects. The worst thing we could do was to start deciding on languages and implementations before we even know what our project is. Another goal for the coming week is for each of us to choose a different area of focus for the project (front-end, back-end, testing, etc.). As we get more experience working together, we should be able to identify what our strengths are and how we can most effectively use them to develop nl2bash. As of now, we haven’t assigned individual tasks or responsibilities, although we are sure to do so in the future.
+
+Progress this Week:
+
+	This past week, we met with Calvin to discuss the direction of our project. We talked about possible ways to improve the existing Tellina dataset (additional verification methods), and then talked about developing an automated data collection tool for expanding the Tellina dataset. One suggestion was to develop a system that continuously scrapes websites such as Stack Overflow for English and bash command pairs, then cleans and filters the data to increase probability of correctness and formats the data so that it can be used by Tellina. Another idea was to create a crowdsourced game to generate new data.
+
+	After discussing, the team decided to go with the former idea. We spent the rest of that day working on the project proposal. Later on, we decided to split the project up into three parts: collection, verification, and formatting. We then decided have each team member focus on one of part of the project. Oisin started working on data collection, and has begun working on the web scraper. For simplicity, we decided to only target StackOverflow for now. Abhinav is researching methods of data verification, such as those used in the data collection process for the exisiting Tellina dataset. Finally, Lauren is looking through the Tellina repository at https://github.com/TellinaTool/nl2bash to research how the existing dataset was formatted, in order to design an automatic formatter. The results from each group member's research will help in writing the upcoming project architecture assignment, and additional details from this research will be included in upcoming individual reports. We also decided to use Java, and to develop a tool separate from Tellina itself that can generate a training database that Tellina will be able to draw from.
+
+Goals for Next Week:
+
+	Our next major task is completing the project architecture assignment. Aside from that, in the next week we will continue researching and designing the three project parts. We need to work on writing project specifications, and ensuring that each group member understands and agrees with those specifications. At that point, each team member will develop a prototype for their project part, which should be complete by next Wednesday.
