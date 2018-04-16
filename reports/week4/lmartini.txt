@@ -1,0 +1,18 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 4 Individual Report
+
+Goals from Last Week:
+
+    In the next week, we plan to add more detail to our project architecture plans. We will meet, either in-person or online, to discuss what each of us found when researching and preparing to start designing our respective parts of the project. The next time we meet, we will write up more concrete design plans based on our individual research. We will also continue communicating over discord to keep each other up to date on our progress. 
+
+Progress this Week:
+
+    Last week we each continued our individual research into our respective project parts. I was looking into the formatting part of the project, so I reserched how Tellina's dataset is currently structured. The manually collected dataset is contained in two files: all.nl, which contains the English descriptions, and all.cm, which contains the corresponding bash commands. The English/bash pairs are matched by-line; that is, the English description on the 12th line of all.nl corresponds to the bash command on the 12th line of all.cm. As such, it seems like formatting the data should be fairly easy. At this point, it was decided that I would join Ahbinav in looking into the cleaning and verification used for Tellina's dataset, which was done using Python. Our research into that and the development of a prototype cleaning/verification system is still ongoing, especially with our recent decision to move towards crowdsourcing as a verification technique.
+
+     Hans joined our group, and we met again with Calvin to discuss project architecture. Last week we were thinking about focusing on collecting data to add to Tellina's dataset. However, we then realized that the creators of Tellina had already tried to implement simple webscraping, cleaning and verification systems. It seemed as if scraping the web for new commands would not be all that novel or difficult, and in fact, Oisin had already put together a simple prototype webscraper. Considering this, we decided to shift our focus towards the data cleaning and verification, in addition to data collection. This way, we would improve the existing data used by Tellina, in addition to adding new data.
+
+Goals for Next Week:
+
+    In the next week, Ahbinav and I will work on developing a prototype for the verification interface. We should have that done by the next individual report. As a team, we also should have a more refined web scraper by the end of this week. Oisin is working on that now. We will also figure out how to run Tellina on our own machines by the end of this week - Hans is looking into that now.
+
