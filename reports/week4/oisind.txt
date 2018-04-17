@@ -1,0 +1,12 @@
+Oisin Doherty
+oisind
+#1269085
+
+Individual Status Report – Week 4
+
+Plans from previous week: 
+“My plan for the following week is to work on the architecture and implementation report, hopefully providing more structure for when I actually begin programming my portion of the project. Personally, I find that it’s a lot easier to reflect and plan ahead on a project when I start actually programming, or when I have a functioning prototype. Depending on how much time the assignments end up taking, I would hope to have a functioning prototype that can parse questions from StackOverflow that have relelvant bash commands within them, and can deliver that data to my teammates in the form of {question, command, keywords}. Getting a working implementation is the hardest aspect of my project, so I would like to get it done earlier so I can focus on improving and integrating my system into our project--although this is a longer term goal.”
+
+In accordance with my goals from last week, I was able to develop a prototype web scraper that parsed StackOverflow for questions tagged “bash” and “shell”. While this is exciting progress, we realized quickly that the Tellina database already has some of the most highly rated, and consequentially, the most thoroughly asked and vetted questions. The most recent questions asked on StackOverflow tend to be poorly phrased and have dubious answers, which means that we may be better off focusing on the data set already used by Tellina and simply attempting to verify it. The implementation of this web scraper was simple enough, and I can’t say that I ran into any issues or got stuck. One thing that we started discussing in our meetings this week was the use of a Node.js server to allow all the components of our project to communicate with each other, rather than manually sending and downloading files to each client. I’ve never worked with Node.js, and I expect that to be an issue, but I’m nonetheless hopeful that I can get started on a working server by either this week, or next week.
+
+As such, my goals for the following week or two involve preliminary setup of a Node.js server, currently we’re looking at Node.js as the most promising option. The initial implementation should be fairly straightforward, but the integration of the individual components is going to require me to figure out and explain how to connect and transfer data between the different applications and the server. If I can get this set up earlier rather than later, it makes it a lot easier to test that our architecture flow is viable.

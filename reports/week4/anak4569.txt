@@ -1,0 +1,18 @@
+Abhinav Gottumukkala (anak4569)	
+
+Individual Status Report - Week 4
+
+  Copy of Last Week's Goals:
+		- Do research on automated verification strategies, as per the proposal's description.
+		- Discuss with my team and mentor in the Tuesday/Thursday meetings to be ready for the "Proj3: Architecture and implementation plan" due on Thursday.
+			- Specifically, as we're already conceptually divided the project into 3 parts, formalize it with some sort of schedule/plan.
+			- Each person should have some starting ideas on how a team of 3 could do each component.
+  
+  What I've Done:
+    - My goals were completed! We all did research on our assigned topics, with me focusing on data verification strategies. We decided at our meeting to just go with a simple user interface as we think the other parts of our project will take more time.
+    - Our group updated our project proposal and added an architecture section. There, we talked about what tools we've started using (jSoup, existing Tellina server setup and others) and what we're considering using (StackOverflow API, documentation parsers)
+    - Lauren and I did our first group's presentation. It was mostly a summary on the updated project proposal; after the presentation, I noticed we forgot to add an easy section that was recommended: progress so far. I'll be sure not to do that next time.
+    
+  Goals:
+    - Get Tellina setup and running; look at how it accepts datasets/updates its model
+    - Create a prototype of the tester verification ui done
