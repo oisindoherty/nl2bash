@@ -1,3 +1,4 @@
 [submodule "tellina"]
 	path = tellina
 	url = https://github.com/oisindoherty/tellina.git
+	branch = master
