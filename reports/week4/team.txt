@@ -1,0 +1,26 @@
+﻿Abhinav Gottumukkala (anak4569)
+Lauren Martini (lmartini)
+Oisin Doherty (oisind)
+Hans Jorgensen (thehans)
+
+Team Status Report: Week 4
+
+Goals from Last Week:
+
+Our next major task is completing the project architecture assignment. Aside 
+from that, in the next week we will continue researching and designing the 
+three project parts. We need to work on writing project specifications, and 
+ensuring that each group member understands and agrees with those 
+specifications. At that point, each team member will develop a prototype for 
+their project part, which should be complete by next Wednesday.
+
+Progress this Week:
+
+(INSERT REST OF TEAM PROGRESS)
+We have acquired a new team member, Hans, this week, and split off a fourth project
+part for him to work on - the task of retraining the Tellina model with new data.
+He has been able to get the Tensorflow training code running on his machine.
+
+Goals for Next Week:
+
+
