@@ -1,26 +1,21 @@
-﻿Abhinav Gottumukkala (anak4569)
-Lauren Martini (lmartini)
 Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
 Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
 
 Team Status Report: Week 4
 
 Goals from Last Week:
 
-Our next major task is completing the project architecture assignment. Aside 
-from that, in the next week we will continue researching and designing the 
-three project parts. We need to work on writing project specifications, and 
-ensuring that each group member understands and agrees with those 
-specifications. At that point, each team member will develop a prototype for 
-their project part, which should be complete by next Wednesday.
+	“Our next major task is completing the project architecture assignment. Aside from that, in the next week we will continue researching and designing the three project parts. We need to work on writing project specifications, and ensuring that each group member understands and agrees with those specifications. At that point, each team member will develop a prototype for their project part, which should be complete by next Wednesday.”
 
 Progress this Week:
 
-(INSERT REST OF TEAM PROGRESS)
-We have acquired a new team member, Hans, this week, and split off a fourth project
-part for him to work on - the task of retraining the Tellina model with new data.
-He has been able to get the Tensorflow training code running on his machine.
+	We successfully completed the project architecture assignment and incorporated the feedback we received into the upcoming Project 4: User Manual. As we worked on the assignment, we became aware of several aspects of the project we hadn’t previously considered—such as how exactly our individual components interact with each other and how we plan to interface with the current Tellina systems. As of now, we’ve talked through the shortcomings in our current task delegations and discussed how we can address them in our individual work. Because the current data set used by Tellina is available on their Github repository and still has entries that need to be verified, the current web scraper prototype may be unnecessary for our project within the scope of this class as we move closer to data verification. We’ve forked the Tellina repository and have started preliminary testing on training the current data set using the included Tensorflow scripts. Having a working fork of Tellina is necessary in our ability to measure the efficacy of our verification process as it allows us to tangibly see how our results affect the ‘correctness’ of the responses from the trained model. 
+
+	The absence of a homework assignment for this week has allowed us to put even more effort into the user manual and actual implementation of our project. The next major deadline we have is for Project 4: User Manual, due tomorrow. This assignment should force us to view our project from the eyes of our users rather than as developers, and hopefully reveal more issues we can fix and iterate on in our next project proposal--similar to our reflection process for Project 3.
 
 Goals for Next Week:
 
-
+	For the next week, we hope that we can have an implementation of the interface proposed in Project 3 that we can integrate with our formatted data at a later point (Abhinav). Another important milestone would be making sure that we can run our own fork of the NL2Bash/Tellina system and train new data (Hans). While not integral to this week’s progress, getting a Node.js server set up that we can use to facilitate communication between our components next week would allow us to continue our focus on our individual developments (Oisin). In addition to this server, it’s important to make sure that we develop a standard format for the data tat each application is going to be sending and receiving from the main server (Lauren).
