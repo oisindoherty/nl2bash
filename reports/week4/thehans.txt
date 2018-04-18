@@ -1,0 +1,48 @@
+Hans Jorgensen (netid: thehans)
+Week 4 Status Report
+
+Since I just joined the team, I do not have a set of goals for the prior week.
+
+I have been working this week on getting the Tellina tool to retrain on new datasets,
+so that we can update the model as we get updates from users. This has included
+setting up this repository to include Tellina and its learning module, installing
+Tensorflow and related tools to run translations, and running training models on the
+data. A few accomplishments and challenges I have faced are:
+- The Tellina code and all requirements, including Tensorflow, run on my personal machine,
+  which is a Windows 10 laptop with the Windows Subsystem for Linux installed.
+- My progress in getting the system to run was hampered by certain configuration options
+  and bugs in the Python code for the website. When cloned, the Tellina repository sets a
+  flag to not load the translation model in order to boot the website faster, which I had
+  to find and configure. Changing this flag also exposed a bug in which the Python code
+  improperly discounted versions of Tensorflow earlier or later than 1.4.
+- I cannot get Tellina running on any lab machines, because they cannot properly set up
+  a Python 3 virtual environment, which Tellina requires for installing and using Tensorflow.
+  This includes both attu and the GPU machines in the labs.
+- On my machine, since I am using WSL, I have no access to my GPU, which means that training
+  takes much longer. I have started a training session, but have yet to complete it (it is
+  running as of this writing). I am beginning to explore other options that can get me access
+  to a GPU machine, and have so far figured out that using Microsoft Azure is both overkill
+  and extremely expensive (to the tune of over $600 a month).
+
+This week, I plan on further exploring Tensorflow model training with the following two tasks:
+- I will add several data points by hand and re-run the training model on them, and see how
+  the translation results improve. If other team members are able to begin scraping and
+  verifying results, I will input those as well.
+- I will explore other methods for getting access to the GPU via Tensorflow by trying the
+  following in roughly this order:
+  - Install Tensorflow for Windows and port all of the repository's Bash scripts and Makefiles
+    to Windows batch files. Most of the code is in Python, which should make it platform
+    agnostic, and changing the parts of the code that are not will allow me to train the model
+    on Windows using the GPU (which should be much faster and consume less energy). This
+    solution will not work, however, if the Python code itself relies on POSIX features.
+  - Prepare an Ubuntu USB boot disk and run Tensorflow from there. This, of course, brings up
+    the issues inherent in dual booting, and may ultimately allow me to only run one training
+    model a night (since I use Windows daily), but the solution itself would likely work.
+  - Contact the CSE sysadmins about the specific issues I am facing when attempting to set up
+    a virtual Tensorflow python environment on the lab machines.
+  - Explore other virtualization options for the CSE lab machines, such as NVIDIA-Docker, that
+    will allow me to install Tensorflow and use the graphics card.
+  - Upgrade my personal laptop from Windows 10 Home to Windows 10 Pro to access Hyper-V, then use
+    Hyper-V to create a virtual Linux machine that can still access the graphics card. This
+    would require me to spend $100 of personal funds on a machine that I will only have for 2 more
+    years, but is likely to be the most workable and convenient solution if nothing else works.
