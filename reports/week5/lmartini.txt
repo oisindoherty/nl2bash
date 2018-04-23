@@ -1,0 +1,17 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 5 Individual Report
+
+Goals from Last Week:
+
+    In the next week, Ahbinav and I will work on developing a prototype for the verification interface. We should have that done by the next individual report. As a team, we also should have a more refined web scraper by the end of this week. Oisin is working on that now. We will also figure out how to run Tellina on our own machines by the end of this week - Hans is looking into that now.
+
+Progress this Week:
+
+    This week Ahbinav and I continued setting up to implement the UI. The group has not communicated very much since last Thursday, and Ahbinav has not yet pushed his code to the repo, so I have not made progress since last week. Ahbinav recently let me know that he will use Visual Studios Community to work on the UI, so I have installed that IDE.
+
+Goals for Next Week:
+
+    Complete and begin testing the UI prototype.
+
+
