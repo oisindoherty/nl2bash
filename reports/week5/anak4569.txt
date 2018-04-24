@@ -1,0 +1,15 @@
+Abhinav Gottumukkala (anak4569)	
+
+Individual Status Report - Week 4
+
+  Copy of Last Week's Goals:
+    - Get Tellina setup and running; look at how it accepts datasets/updates its model
+    - Create a prototype of the tester verification ui done
+  
+  What I've Done:
+    - Finished the user manual. Got a bunch of feedback on how to improve it, including sections for common use cases and other things.
+    - Created a repository for the Tester UI and have a 'local' prototype; need to get server logic and interactions down.
+    
+  Goals:
+    - Get the system ready for testing (both the UI and other components)
+    - Finish addition to the report due on Thursday; work on feedback received for user manual
