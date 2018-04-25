@@ -1,0 +1,29 @@
+Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
+Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
+
+Team Status Report: Week 4
+
+Goals from Last Week:
+
+	“For the next week, we hope that we can have an implementation of the interface proposed in Project 3 that we can integrate with our formatted data at a later point (Abhinav). Another important milestone would be making sure that we can run our own fork of the NL2Bash/Tellina system and train new data (Hans). While not integral to this week’s progress, getting a Node.js server set up that we can use to facilitate communication between our components next week would allow us to continue our focus on our individual developments (Oisin). In addition to this server, it’s important to make sure that we develop a standard format for the data that each application is going to be sending and receiving from the main server (Lauren).”
+
+Progress this Week:
+
+  We successfully completed the user manual assignment and incorporated the feedback from the previous week into our report. We've received feedback for the user manual, including adding use cases and other details to flesh it out, which we will integrate for tomorrow's project build assignment. Hanz has recently started experimenting with training the Tellina model on AWS with a gpu, but it's taking a very long time (many more hours than is acceptable if we want daily ). We've made the TesterUI a submodule of our project and we We had a meeting yesterday (Tuesday) to decide the following things: which parts of our implementation can be tested/what we want in continuous integration, what server interactions we want outside of training with a gpu on AWS, what our specific roles were in the implementation (mostly discussing what part of the TesterUI and server setup Lauren and Abhinav would do) and what parts of the report and user manual we have to update after our discussion.
+
+Goals for Next Week:
+
+	- Abhinav: the UI wasn't completed because we were still discussing what elements we want it in and what input/output formats it should have. These should be decided and the interface completed by next week.
+  - Oisin: Tests for the scraper should be completed along with the build system for the entire project. This should be added to continuous integration.
+  - Lauren: Research on how to send html messages from the .NET api and how to set up a server receiving these html messages with either nodejs or django.
+  - Hans: Research or talk to the TA's/prof about our other options for training; test to see if you can run a localhost version of Tellina using the documented scripts/make files.
+  
+Agenda:
+  - Calvin's questions for us/agenda
+  - Our questions for him:
+    - Is it alright if only one component gets built/tested? How can things like servers/UI be tested?
+      - The assignment asks for us to add instructions to reproduce our build/test results, but once again, how can we do those for servers/UI/others?
+    - What alternatives are there for training? We've tried AWS and it wasn't very fast on the free tier.
