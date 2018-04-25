@@ -2,3 +2,6 @@
 	path = tellina
 	url = https://github.com/oisindoherty/tellina.git
 	branch = master
+[submodule "TesterUI"]
+	path = TesterUI
+	url = https://github.com/anabh4569/TesterUI
