@@ -1,8 +1,6 @@
 language: java
 git:
     submodules: false
-script:
-    - NL2BashWebScraper/./gradlew assemble
-    - NL2BashWebScraper/./gradlew check
+before_script: cd NL2BashWebScraper
 notifications:
     email: false
