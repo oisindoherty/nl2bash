@@ -30,7 +30,7 @@ public class MainClient {
 		}
 	}
 	
-	public static void ScrapePage(String WebpageURL) {
+	public static int ScrapePage(String WebpageURL) {
 		System.out.println("Parsing Page: " + WebpageURL);
 		
 		File verificationFile = new File("ScrapedPages/" + WebpageURL.split("/")[4] + ".verify");
@@ -38,14 +38,14 @@ public class MainClient {
 			verificationFile.createNewFile();
 		} catch (IOException e2) {
 			e2.printStackTrace();
-			return;
+			return -1;
 		}
 		PrintWriter verificationWriter;
 		try {
 			verificationWriter = new PrintWriter(verificationFile);
 		} catch (FileNotFoundException e1) {
 			e1.printStackTrace();
-			return;
+			return -1;
 		}
 		
 		try {
@@ -71,10 +71,13 @@ public class MainClient {
 			
 			verificationWriter.flush();
 			verificationWriter.close();
+			
+			return 1;
 		} catch (Exception e) { 
 			verificationWriter.close();
 			verificationFile.delete();
 			e.printStackTrace();
+			return -1;
 		}
 	}
 }
