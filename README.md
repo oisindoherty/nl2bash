@@ -3,6 +3,3 @@ Utilizing natural language processing to transform english requests to valid Bas
 
 Check the user manual for help using nl2bash and Tellina. The user manual can be found at
 https://github.com/oisindoherty/nl2bash/blob/master/nl2bash_user_manual.pdf
-
-TesterUI repository can be found here (was having some issues with submodules and travis, which will be addressed soon):
-https://github.com/anabh4569/TesterUI
