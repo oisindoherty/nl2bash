@@ -1,3 +1,8 @@
 language: java
 git:
-  submodules: false
+    submodules: false
+script:
+    - NL2BashWebScraper/.gradlew assemble
+    - NL2BashWebScraper/.gradlew check
+notifications:
+    email: false
