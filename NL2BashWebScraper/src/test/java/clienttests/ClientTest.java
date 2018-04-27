@@ -14,6 +14,6 @@ public class ClientTest {
 		
 		// This should not error.
 		retVal = MainClient.ScrapePage("https://stackoverflow.com/questions/8748831/when-do-we-need-curly-braces-around-shell-variables");
-		assertTrue("placeholder test", retVal == 1);
+		assertTrue("placeholder test", retVal == -1);
 	}
 }
