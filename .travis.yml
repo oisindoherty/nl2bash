@@ -1,6 +1,4 @@
 language: java
-git:
-    submodules: false
 before_script: cd NL2BashWebScraper
 notifications:
     email: false
