@@ -1,4 +1,4 @@
-# nl2bash
+# nl2bash [![Build Status](https://travis-ci.org/oisindoherty/nl2bash.svg?branch=master)](https://travis-ci.org/oisindoherty/nl2bash)
 Utilizing natural language processing to transform english requests to valid Bash commands.
 
 Check the user manual for help using nl2bash and Tellina. The user manual can be found at
