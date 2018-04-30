@@ -1,0 +1,15 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 5 Individual Report
+
+Goals from Last Week:
+
+    Complete and begin testing the UI prototype.
+
+Progress this Week:
+
+    Last week on Tuesday, our group met to discuss our roles in the project. Oisin and Hans had fairly clear roles, but it was unclear how Ahbinav and I were going to split up the UI implementation. Since no one was dedicated to integration yet, it was decided that I should work on setting up a server that will facilitate file requests and transfers between the tester UI, the training dataset for Tellina, and the machine where Tellina is being trained (currently AWS set up by Hans). At first, we discussed using Node.js, but then we recalled that the Tellina web interface uses Django. I have much more experience in Python than Javascript, and Django has many high-level features that should meet our needs without being too complicated to jump into quickly. So we decided to use Django, and since then I have been working on the server, doing tutorials and generally becoming familiar with Django. I also updated the project report last week.
+ 
+Goals for Next Week:
+
+    Get the server up and running, and successfully transfer files between the webscraper, the tester UI, and the machine where Tellina is being trained.
