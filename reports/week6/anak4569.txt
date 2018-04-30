@@ -1,0 +1,19 @@
+Abhinav Gottumukkala (anak4569)	
+
+Individual Status Report - Week 4
+
+  Copy of Last Week's Goals:
+    - Get the system ready for testing (both the UI and other components)
+    - Finish addition to the report due on Thursday; work on feedback received for user manual
+  
+  What I've Done:
+    - The build system has been created and travis is up and running! (Even on the vs submodule, but we might change that to html/js).
+    - Our Thursday assignment was completed; we got a bunch of feedback on our report now (rather than our user manual), that we need to work on.
+    - We decided to move to a html/js based implementation of the tester interface. This means we'll have to recreate the user manual section for it.
+    
+  Goals:
+    - Finish the Thursday assignment
+    - See if I can run the Tellina training module faster
+    - Switch our user interface from vs solution/c# -> html/js; try to build it completely by next week
+      - When this is done, the user manual must be updated
+      - Get travis to work with whatever framework we choose to use; this might include writing tests
