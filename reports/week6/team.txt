@@ -1,0 +1,28 @@
+Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
+Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
+
+Team Status Report: Week 6
+
+Goals from Last Week:
+
+- Abhinav: the UI wasn't completed because we were still discussing what elements we want it in and what input/output formats it should have. These should be decided and the interface completed by next week.
+
+  - Oisin: Tests for the scraper should be completed along with the build system for the entire project. This should be added to continuous integration.
+
+  - Lauren: Research on how to send html messages from the .NET api and how to set up a server receiving these html messages with either nodejs or django.
+
+  - Hans: Research or talk to the TA's/prof about our other options for training; test to see if you can run a localhost version of Tellina using the documented scripts/make files.
+
+Progress this Week:
+
+After switching between several mediums, we’ve finally settled on building the UI as a webpage rather than using Windows Forms.  We know that this is a large change, but we expect this to be more accessible to users who don’t have a Windows machine. In accordance with the assignment due last week, we changed the web scraper to use the Gradle build system, added tests for the web scraper, and added Travis CI to the repository. Our next major area of work was the server, which we have made some progress setting up a basic Django server to process our HTTP POST and GET requests for both transmitting unverified data and receiving verified data. Finally, we have finally run a training session on our fork of Tellina. Despite changing around some of our core systems, we are slowly making progress towards being able to implement our project.
+
+Goals for Next Week:
+
+We’re looming closer to Project 7, which requires us to have preliminary results for our project; this is largely an issue considering we have yet to successfully combine and test our individual pieces as a whole. We’ve defined our procedures for testing within the Week 6 Report, which we imagine will be somewhat simple to generate graphs and tables from. The hard part we imagine will be getting enough verified data to successfully impact the training for Tellina, and actually creating a working version of our project. We are still changing around core implementation details which seems indicative that we need to meet more frequently to make sure that we’re all on the same page. We should have a fully working version of our project by this time next week that we can use to get preliminary testing data.
+  
+Agenda:
+We should first answer any questions Calvin has for us, as they help gauge if we’re on track for the week and help us identify areas we otherwise had issues in. Our major talking points this week would involve figuring out how our “master script” (building and running all components of our project / integration testing) would work on our project given our very modular and disjoint system. Further discussion should include our usual status updates on how our individual progress is coming along and when we should have them completed.
