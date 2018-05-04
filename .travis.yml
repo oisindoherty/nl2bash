@@ -2,9 +2,6 @@ matrix:
     include:
         - language: java
           before_script: cd NL2BashWebScraper
-          
-        - language: csharp
-          solution: TesterUI/TesterUIFormsApp/TesterUIFormsApp.sln
 
 notifications:
     email: false
