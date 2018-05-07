@@ -3,5 +3,17 @@ matrix:
         - language: java
           before_script: cd NL2BashWebScraper
 
+        - language: python
+          python: "3.6"
+          before_script: cd nl2bash_server
+          install:
+            - pip install pipenv
+          script:
+            # - pytest
+            - pipenv install
+            - pipenv run python manage.py migrate
+            - pipenv run python -m nl2bash_server.add_data_from_scraper
+            - timeout 10 pipenv run python manage.py runserver
+
 notifications:
     email: false
