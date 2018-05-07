@@ -10,6 +10,7 @@ matrix:
             - pip install pipenv
           script:
             # - pytest
+            - export PIPENV_IGNORE_VIRTUALENVS=1
             # - pipenv install
             - pipenv run python manage.py migrate
             - pipenv run python -m nl2bash_server.add_data_from_scraper test_pages/ScrapedPages
