@@ -10,10 +10,10 @@ matrix:
             - pip install pipenv
           script:
             # - pytest
-            - pipenv install
+            # - pipenv install
             - pipenv run python manage.py migrate
             - pipenv run python -m nl2bash_server.add_data_from_scraper test_pages/ScrapedPages
-            - timeout --preserve-status 10 pipenv run python manage.py runserver
+            # - timeout --preserve-status 10 pipenv run python manage.py runserver
 
 notifications:
     email: false
