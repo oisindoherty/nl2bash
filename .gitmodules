@@ -3,9 +3,6 @@
 	url = https://github.com/oisindoherty/tellina.git
 	branch = master
 
-[submodule "TesterUI"]
-	path = TesterUI
-	url = https://github.com/anabh4569/TesterUI
 [submodule "nl2bash_server"]
 	path = nl2bash_server
 	url = https://github.com/FiddlerOnTheNet/nl2bash_server.git
