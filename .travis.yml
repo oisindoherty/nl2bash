@@ -30,7 +30,6 @@ matrix:
             - sleep 10s
             - (curl -is http://localhost:8000/) | head -1 | grep '302'
             - kill $PID
-            - cat log.txt
 
 notifications:
     email: false
