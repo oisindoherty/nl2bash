@@ -1,0 +1,21 @@
+Abhinav Gottumukkala (anak4569)	
+
+Individual Status Report - Week 7
+
+  Copy of Last Week's Goals:
+    - Finish the Thursday assignment
+    - See if I can run the Tellina training module faster
+    - Switch our user interface from vs solution/c# -> html/js; try to build it completely by next week
+      - When this is done, the user manual must be updated
+      - Get travis to work with whatever framework we choose to use; this might include writing tests
+  
+  What I've Done:
+    - The Thursday assignment was completed (report feedback + user manual update).
+    - We've moved from .Net -> django and html/js; I've partially integrated it with travis, but that's still a WIP.
+    - Discussed with Calvin the various approaches we can take for our Thursday deadline.
+    
+  Goals:
+    - Finish the Thursday assignment.
+    - (Moved to this week) try to help Hans get training done faster (+ mess around on my own).
+      - Either with the UI data (+ old?) or by cleaning the old data of bad commands.
+    - Finish travis integration (testing server in the script too).
