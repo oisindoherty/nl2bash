@@ -28,7 +28,7 @@ matrix:
             - ((pipenv run python manage.py runserver) > log.txt) &
             - PID=$!
             - sleep 10s
-            - (curl -is http://localhost:8000/nl2bash_server_app/tester) | head -1 | grep '200 OK'
+            - (curl -is http://localhost:8000/) | head -1 | grep '302'
             - kill $PID
             - cat log.txt
 
