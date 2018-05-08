@@ -27,9 +27,10 @@ matrix:
             # test the server: use & and $! to kill it eventually
             - ((pipenv run python manage.py runserver) > log.txt) &
             - PID=$!
-            - sleep 15s
-            - (curl -is http://localhost:8000/) | head -1 | grep '200 OK'
+            - sleep 10s
+            - (curl -is http://localhost:8000/nl2bash_server_app/tester) | head -1 | grep '200 OK'
             - kill $PID
+            - cat log.txt
 
 notifications:
     email: false
