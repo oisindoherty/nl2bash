@@ -25,7 +25,7 @@ matrix:
             - pipenv run python manage.py migrate
             - pipenv run python -m nl2bash_server.add_data_from_scraper test_pages/ScrapedPages
             # test the server: use & and $! to kill it eventually
-            - ((pipenv run python manage.py runserver) > log.txt) &
+            - (pipenv run python manage.py runserver) &
             - PID=$!
             - sleep 10s
             - (curl -is http://localhost:8000/) | head -1 | grep '302'
