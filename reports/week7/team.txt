@@ -1,0 +1,19 @@
+Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
+Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
+
+Team Status Report: Week 7
+
+Goals for Last Week:
+
+We’re looming closer to Project 7, which requires us to have preliminary results for our project; this is largely an issue considering we have yet to successfully combine and test our individual pieces as a whole. We’ve defined our procedures for testing within the Week 6 Report, which we imagine will be somewhat simple to generate graphs and tables from. The hard part we imagine will be getting enough verified data to successfully impact the training for Tellina, and actually creating a working version of our project. We are still changing around core implementation details which seems indicative that we need to meet more frequently to make sure that we’re all on the same page. We should have a fully working version of our project by this time next week that we can use to get preliminary testing data.
+
+Progress This Week:
+
+We are on track for preliminary results for our project. We have created a version of the Tester UI that can run on a local machine, though running it on a full server does not yet work. This includes both the tester UI backend and an HTML frontend. We have used this to generate some initial test data in the same format that Tellina already requests (a side-by-side pair of files with lines of natural language paired with lines of Bash). We are sill working on getting access to a better GPU server for training the full model, though we are making good progress with Amazon AWS Support to grant us this request. In the meantime, we are able to generate evaluation tables from the models we have already been able to train.
+
+Goals for Next Week:
+
+Our first immediate goal is to complete the build pipeline, from cloning the repository to running the completed website, and begin integration testing using Travis CI. After this, we want to start generating lots of data, from scraping and from true verifications, to supply a new dataset for Tellina. This will include improvements and finalizations to both the scraper and the testing UI/server. We also want to integrate the training process, either fully, or simply through model loading, into the build pipeline, and get access to a stronger machine in order to complete training more quickly.
