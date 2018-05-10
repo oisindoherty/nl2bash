@@ -8,7 +8,7 @@ including one-liners that it can piece together naturally. These three projects 
 - Tellina, a Tensorflow-based machine learning system that translates English into Bash 
   commands, using training data gathered from experts and from sites like StackOverflow.
 - NL2BashWebScraper, a JSoup-based tool to gather more potential data pairs from the Internet.
-- TesterUI, a Windows Forms-based tool to allow users to verify these data pairs.
+- TesterUI, a browser-based tool to allow users to verify these data pairs.
 
 The Tellina project and the TesterUI are found in submodules.
 To clone these submodules, use:

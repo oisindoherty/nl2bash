@@ -1,10 +1,35 @@
+# We don't run tests on tellina, so pointless to download huge files from those submodules.
+git:
+    submodules: false
+
 matrix:
     include:
         - language: java
           before_script: cd NL2BashWebScraper
-          
-        - language: csharp
-          solution: TesterUI/TesterUIFormsApp/TesterUIFormsApp.sln
+
+        - language: python
+          python: "3.6"
+          before_script:
+            # Just in this build task, get the submodule for nl2bash_server
+            - git submodule init
+            - git submodule deinit tellina # we don't want this sm for this task
+            - git submodule update
+            - cd nl2bash_server
+          install:
+            - pip install pipenv
+          script:
+            # - pytest: if we ever add a test suite for the server itself, this is probably the best way
+            # pipenv: install the python packages and prepare to test the server
+            - export PIPENV_IGNORE_VIRTUALENVS=1
+            - pipenv install
+            - pipenv run python manage.py migrate
+            - pipenv run python -m nl2bash_server.add_data_from_scraper test_pages/ScrapedPages
+            # test the server: use & and $! to kill it eventually
+            - (pipenv run python manage.py runserver) &
+            - PID=$!
+            - sleep 10s
+            - (curl -is http://localhost:8000/) | head -1 | grep '302'
+            - kill $PID
 
 notifications:
     email: false

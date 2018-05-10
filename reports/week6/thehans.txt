@@ -1,0 +1,43 @@
+Hans Jorgensen (netid: thehans)
+Week 6 Status Report
+
+I neglected to write a status report for week 5, so these were my
+established goals for week 4:
+- I will add several data points by hand and re-run the training model on them, and see how
+  the translation results improve. If other team members are able to begin scraping and
+  verifying results, I will input those as well.
+- I will explore other methods for getting access to the GPU via Tensorflow by trying the
+  following in roughly this order:
+  - Install Tensorflow for Windows and port all of the repository's Bash scripts and Makefiles
+    to Windows batch files. Most of the code is in Python, which should make it platform
+    agnostic, and changing the parts of the code that are not will allow me to train the model
+    on Windows using the GPU (which should be much faster and consume less energy). This
+    solution will not work, however, if the Python code itself relies on POSIX features.
+  - Prepare an Ubuntu USB boot disk and run Tensorflow from there. This, of course, brings up
+    the issues inherent in dual booting, and may ultimately allow me to only run one training
+    model a night (since I use Windows daily), but the solution itself would likely work.
+  - Contact the CSE sysadmins about the specific issues I am facing when attempting to set up
+    a virtual Tensorflow python environment on the lab machines.
+  - Explore other virtualization options for the CSE lab machines, such as NVIDIA-Docker, that
+    will allow me to install Tensorflow and use the graphics card.
+  - Upgrade my personal laptop from Windows 10 Home to Windows 10 Pro to access Hyper-V, then use
+    Hyper-V to create a virtual Linux machine that can still access the graphics card. This
+    would require me to spend $100 of personal funds on a machine that I will only have for 2 more
+    years, but is likely to be the most workable and convenient solution if nothing else works.
+
+Over the last two weeks, I did the following:
+- I ended up getting access to the GPU for Tensorflow by using a GPU compute instance
+  on Amazon AWS. I was able to establish and learn the following:
+  - Even when reducing the sample size and number of training epochs, training still took 16
+    hours on the default dataset. I am currently working with the course staff to get access
+    to AWS education credits, so that I can use a stronger machine to train the data.
+  - I do, however, have a machine set up, and we can use it again to easily set up another
+    training session. It currently pulls and submits new data through our Git repository.
+
+My goals are to do the following over the next week:
+- Use the newly generated training model on the training interface (either through setting
+  up the website or finding a command line interface).
+- Add some data to the Tellina dataset (most likely through web scraping) and run the
+  training algorithm again.
+- Work with the staff to get AWS credits so that I can run more training sessions, perhaps
+  on more powerful machines.
