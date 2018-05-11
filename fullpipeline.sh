@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git submodule update --init --recursive
+git submodule update --init --recursive --depth 1
 
 cd NL2BashWebScraper
 (./gradlew run) &
@@ -24,9 +24,12 @@ mv -f -t ../tellina/tellina_learning_module/data/bash all.cm all.nl
 cd ..
 
 cd tellina
+pip3 install -r requirements.txt
 make submodule
 cd tellina_learning_module
+pip3 install -r requirements.txt
 cd experiments
+# pip3 install tensorflow
 # make data
 # make train
 make decode
