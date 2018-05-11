@@ -11,7 +11,7 @@ kill $!
 cd ..
 
 cd nl2bash_server
-pip3 install pipenv
+pip3 install --user pipenv
 pipenv run python manage.py migrate
 pipenv run python -m nl2bash_server.add_data_from_scraper ./test_pages/ScrapedPages
 (pipenv run python manage.py runserver) &
