@@ -6,3 +6,4 @@
 [submodule "nl2bash_server"]
 	path = nl2bash_server
 	url = https://github.com/FiddlerOnTheNet/nl2bash_server.git
+	branch = master
