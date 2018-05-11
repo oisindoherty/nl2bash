@@ -13,7 +13,7 @@ cd ..
 cd nl2bash_server
 pip3 install pipenv
 pipenv run python manage.py migrate
-pipenv run python -m nl2bash_server.add_data_from_scraper ../NL2BashWebScraper/ScrapedPages
+pipenv run python -m nl2bash_server.add_data_from_scraper ./test_pages/ScrapedPages
 (pipenv run python manage.py runserver) &
 PID=$!
 read -p "Press enter to stop hosting the tester ui interface.\n"
