@@ -24,7 +24,7 @@ https://github.com/oisindoherty/nl2bash/blob/master/nl2bash_user_manual.pdf
 # Reproducing results from start to finish
 In linux, execute the following:
 
-    $ ./fullpipeline.sh
+    $ sh fullpipeline.sh
     
 Note: you will be prompted to stop the scraping/verifying.
 The training step is very long; uncomment the `make data` and `make train` lines to do them.
