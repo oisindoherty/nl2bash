@@ -1,0 +1,15 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 7 Individual Report
+
+Goals from Last Week:
+
+    Get the server up and running, and successfully transfer files between the webscraper, the tester UI, and the machine where Tellina is being trained.
+
+Progress this Week:
+
+    Over the weekend I worked on implementing and testing the server, including implementing the back-end of the tester UI webpage. This involved using Django to work with commands from the webscraper, putting them in a database and then inserting them into the html page for the tester UI. Oisin sent me a small set of .verify files from the webscaper to use for testing this system. At this point, the tester UI is functional, where the user can select commands to mark that command pair as verified, which will result in it being saved to the files all.nl (for the English description) and all.cmd (for the bash command), which were then sent to Hans to use for training Tellina.
+ 
+Goals for Next Week:
+
+    Update the scripts that add commands to the server database to take Json files instead of the .verify files we are using now. Then, work on automating the process of feeding data from the webscraper, cleaning it with Tellina's scripts, adding the command pairs to the database, displaying those commands in the UI, and sending verified commands to Tellina's training dataset. By the end of this week, we hope to have the project components linked together and the process of running them automated.
