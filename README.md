@@ -8,7 +8,7 @@ including one-liners that it can piece together naturally. These three projects 
 - Tellina, a Tensorflow-based machine learning system that translates English into Bash 
   commands, using training data gathered from experts and from sites like StackOverflow.
 - NL2BashWebScraper, a JSoup-based tool to gather more potential data pairs from the Internet.
-- TesterUI, a browser-based tool to allow users to verify these data pairs.
+- TesterUI, a django-based tool to allow users to verify these data pairs.
 
 The Tellina project and the TesterUI are found in submodules.
 To clone these submodules, use:
@@ -26,5 +26,6 @@ In linux, execute the following:
 
     $ sh fullpipeline.sh
     
-Note: you will be prompted to stop the scraping/verifying; .
+Note: you will be prompted to stop the scraping/verifying (press enter for these).
+
 The training step is very long; uncomment the lines in the last section to run training.
