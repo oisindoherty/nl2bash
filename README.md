@@ -21,9 +21,10 @@ Consult each project's README.md for further build instructions for each.
 Check the user manual for help using nl2bash and Tellina. The user manual can be found at
 https://github.com/oisindoherty/nl2bash/blob/master/nl2bash_user_manual.pdf
 
-# Reproducing tables from start to finish
-In linux, in this base directory, execute the following:
+# Reproducing results from start to finish
+In linux, execute the following:
 
     $ ./fullpipeline.sh
     
-Note: you will be prompted to stop the scraping/verifying; the training step is very long.
+Note: you will be prompted to stop the scraping/verifying.
+The training step is very long; uncomment the `make data` and `make train` lines to do them.
