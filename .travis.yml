@@ -16,7 +16,7 @@ matrix:
             - git submodule update
             - cd nl2bash_server
           install:
-            - pip install pipenv
+            - pip3 install pipenv
           script:
             # - pytest: if we ever add a test suite for the server itself, this is probably the best way
             # pipenv: install the python packages and prepare to test the server
