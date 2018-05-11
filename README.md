@@ -26,5 +26,5 @@ In linux, execute the following:
 
     $ sh fullpipeline.sh
     
-Note: you will be prompted to stop the scraping/verifying; .
+Note: you will be prompted to stop the scraping/verifying.
 The training step is very long; uncomment the `make data` and `make train` lines to do them.
