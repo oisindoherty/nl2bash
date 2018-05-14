@@ -1,0 +1,16 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 8 Individual Report
+
+Goals from Last Week:
+
+    Update the scripts that add commands to the server database to take Json files instead of the .verify files we are using now. Then, work on automating the process of feeding data from the webscraper, cleaning it with Tellina's scripts, adding the command pairs to the database, displaying those commands in the UI, and sending verified commands to Tellina's training dataset. By the end of this week, we hope to have the project components linked together and the process of running them automated.
+
+Progress this Week:
+
+    We have updated the report and generated initial results based on the test dataset Oisin sent me. I extended that small test dataset by verifying some more commands through the Tester UI, and then sending the resulting all.nl and all.cmd files to Hans to add to the training dataset. We have not yet finished implementing the full pipeline.
+ 
+Goals for Next Week:
+
+    Update the scripts that add commands to the server database to take Json files instead of the .verify files we are using now. Then, work on automating the process of feeding data from the webscraper, cleaning it with Tellina's scripts, adding the command pairs to the database, displaying those commands in the UI, and sending verified commands to Tellina's training dataset. By the end of this week, we hope to have the project components linked together and the process of running them automated.
+    Test the full system thoroughly, and work on obtaining a larger dataset to test with through the Tester UI by finding users or just using the Tester UI ourselves. We also plan to move the webscraper to run on the same server that serves the pages for the Tester UI, which I would handle.
