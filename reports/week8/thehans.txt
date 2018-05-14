@@ -1,0 +1,26 @@
+Hans Jorgensen (netid: thehans)
+Week 6 Status Report
+
+I neglected to write a status report for week 7, so these were my
+established goals for week 6:
+- Use the newly generated training model on the training interface (either through setting
+  up the website or finding a command line interface).
+- Add some data to the Tellina dataset (most likely through web scraping) and run the
+  training algorithm again.
+- Work with the staff to get AWS credits so that I can run more training sessions, perhaps
+  on more powerful machines.
+
+Over the last two weeks, I've kinda been in dire straits, honestly. I have managed to complete
+a training run and gather initial table results, and have also just managed to get approval
+from Amazon AWS to use a much more powerful instance that is 16 times more powerful than the
+machine we were using. I have not managed, however, to run any training with additional data
+or with the original training parameters (with 100 epochs), nor have I managed to test it with
+the training interface (my previous attempt to reduce the time it would take to train the model
+did not take well to the website application). In short, I have actually gotten very little work
+done.
+
+Over the next week, I will try to do more, including the following:
+- Run the training with newly scraped data as it comes in.
+- Publish this new model to the repository and run the website with it
+- Get, if possible, access to Amazon credits through the university so that I don't have to pay
+  for these training runs out of pocket.
