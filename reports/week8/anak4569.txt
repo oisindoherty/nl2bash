@@ -1,0 +1,21 @@
+Abhinav Gottumukkala (anak4569)	
+
+Individual Status Report - Week 8
+
+  Copy of Last Week's Goals:
+    - Finish the Thursday assignment.
+    - (Moved to this week) try to help Hans get training done faster (+ mess around on my own).
+      - Either with the UI data (+ old?) or by cleaning the old data of bad commands.
+    - Finish travis integration (testing server in the script too).
+  
+  What I've Done:
+    - The Thursday assignment was completed (initial results).
+    - I got a lot of work done on the full pipeline script. Need to finish that and integrate it into travis.
+    - Did research on how we can host our sites on a public domain (https://itconnect.uw.edu/connect/web-publishing/shared-hosting/).
+    
+  Goals:
+    - Finish the Thursday assignment.
+    - (Moved to this week) try to help Hans get training done faster (+ mess around on my own).
+      - Either with the UI data (+ old?) or by cleaning the old data of bad commands.
+    - Finish travis integration (all components should be tested).
+    - Host our version of Tellina and the TesterUI with the scraper working in the background on my cs site.
