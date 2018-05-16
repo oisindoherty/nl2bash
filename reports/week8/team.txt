@@ -1,0 +1,27 @@
+Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
+Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
+
+Team Status Report: Week 8
+
+Goals for Last Week:
+
+“Our first immediate goal is to complete the build pipeline, from cloning the repository to running the completed website, and begin integration testing using Travis CI. After this, we want to start generating lots of data, from scraping and from true verifications, to supply a new dataset for Tellina. This will include improvements and finalizations to both the scraper and the testing UI/server. We also want to integrate the training process, either fully, or simply through model loading, into the build pipeline, and get access to a stronger machine in order to complete training more quickly.”
+
+Progress This Week:
+
+While we have yet to complete the build pipeline from start to finish, we were able to successfully train a model to obtain initial results and see some of the issues with our current design. We created a script that runs our full pipeline (assuming that all the individual pieces are working)—our first real form of integration testing. The scraper was updated to scrape all the relevant StackOverflow pages, rather than only a few for testing purposes, and to use a JSON format instead of the tab delimited format we previously used. The verification website was accordingly updated to this new format, although this may need some more updating to handle multi-line commands found in the StackOverflow answers. We were able to successfully train a model to produce initial results, although we have had some issues extending this success to different training parameters and different data sets.
+
+At the moment, there are a handful of issues preventing us from completing our pipeline that we are working on resolving; such issues include the format of our .verify files, cleaning/formatting StackOverflow commands outside of utilities supplied by Tellina, and getting training to run on novel data (at specified intervals). Although they seem like large hurdles, we feel like we’ve discussed them enough to properly implement solutions within the coming week. Getting these issues resolved quickly is critical so we can continue evaluation and ultimately begin working on our final report.
+
+Goals for Next Week:
+
+Our first immediate goal is to complete the build pipeline, from cloning the repository to running the completed website, and begin integration testing using Travis CI. After this, we want to start generating lots of data, from scraping and from true verifications, to supply a new dataset for Tellina. This will include improvements and finalizations to both the scraper and the testing UI/server. We also want to integrate the training process, either fully, or simply through model loading, into the build pipeline, and get access to a stronger machine in order to complete training more quickly.
+
+Meeting Agenda:
+•	Discussion of solutions for each of the issues that we’re currently facing.
+•	Are we making sufficient progress? (Relative to other teams?)
+•	Questions on content and organization of final report.
+
