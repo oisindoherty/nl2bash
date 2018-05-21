@@ -1,0 +1,11 @@
+Oisin Doherty
+oisind
+#1269085
+
+Individual Status Report – Week 9
+
+“We’re closing in on the end of this course, meaning that we really need to get a working pipeline complete soon. We’re still making design decisions that we should have figured out earlier in the planning process, but we’re still making forward progress. The most important thing to get done is getting the JSON output of the scraper to work with the website. For a longer-term goal, I should consider some heuristic we can use to make sure that we don’t scrape pages that are unlikely to get new information on subsequent sweeps (such as the most popular, thoroughly vetted questions).”
+
+As far as I’m aware, our pipeline should work, but we haven’t quite tested it out completely yet. Lauren and I got the current JSON formatting to work with the website, and as far as I’m aware, the website can verify and output training data. Between presentation slides, code reviews, and homework for other classes, I didn’t get as much work done on the web scraper this week as I would have liked to. Rather, working on the presentation and looking over the feedback given to us on our presentation and code review should give me some concrete points to work on this week. While I didn’t write much code this week, I should be able to quickly add some new additions and revisions to the existing code for the scraper. All the work is internal and shouldn’t affect the output so we don’t need to worry about integration issues. I also have some new ideas about how to test the scraper (as the current tests are pretty bad due to some issues with Travis CI).
+
+By the end of the day today, I want to have implemented caching and a heuristic to the scraper. Ideally, we should have our full pipeline running by Wednesday and have a working implementation by Friday. As such, I want to get the web scraper into its final iteration by Tuesday so I have extra time to make any last minute changes to the output format or other integration changes on Wednesday and Thursday. 
