@@ -1,2 +1,15 @@
-/.gradle/
-/build/
+# Gradle
+# -------
+.gradle
+/build
+
+# Eclipse
+# -------
+*.classpath
+*.project
+*.settings
+/bin
+
+# Web Scraper Output
+# -------
+/ScrapedPages
