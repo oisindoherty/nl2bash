@@ -1,0 +1,19 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 9 Individual Report
+
+Goals from Last Week:
+
+    Update the scripts that add commands to the server database to take Json files instead of the .verify files we are using now. Then, work on automating the process of feeding data from the webscraper, cleaning it with Tellina's scripts, adding the command pairs to the database, displaying those commands in the UI, and sending verified commands to Tellina's training dataset. By the end of this week, we hope to have the project components linked together and the process of running them automated.
+    Test the full system thoroughly, and work on obtaining a larger dataset to test with through the Tester UI by finding users or just using the Tester UI ourselves. We also plan to move the webscraper to run on the same server that serves the pages for the Tester UI, which I would handle.
+
+Progress this Week:
+
+    Honestly, I have been completely overwhelmed with finishing my undergraduate thesis, and I haven't made progress for this course in the last week. The group plans on meeting tonight or tomorrow morning to discuss next steps.
+ 
+Goals for Next Week:
+
+    Update the scripts that add commands to the server database to take Json files instead of the .verify files we are using now. Then, work on automating the process of feeding data from the webscraper, cleaning it with Tellina's scripts, adding the command pairs to the database, displaying those commands in the UI, and sending verified commands to Tellina's training dataset. By the end of this week, we hope to have the project components linked together and the process of running them automated.
+    Test the full system thoroughly, and work on obtaining a larger dataset to test with through the Tester UI by finding users or just using the Tester UI ourselves. We also plan to move the webscraper to run on the same server that serves the pages for the Tester UI, which I would handle.
+
+
