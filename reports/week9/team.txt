@@ -1,0 +1,24 @@
+Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
+Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
+
+Team Status Report: Week 9
+
+Goals for Last Week:
+
+“Our first immediate goal is to complete the build pipeline, from cloning the repository to running the completed website, and begin integration testing using Travis CI. After this, we want to start generating lots of data, from scraping and from true verifications, to supply a new dataset for Tellina. This will include improvements and finalizations to both the scraper and the testing UI/server. We also want to integrate the training process, either fully, or simply through model loading, into the build pipeline, and get access to a stronger machine in order to complete training more quickly.”
+
+Progress This Week:
+
+Due to the presentations, code reviews, report updating, and other commitments last week, we were not able to get as much work done on our project as we would have liked. Our conflicting time schedules have made it hard to schedule a time to meet on Monday or Tuesday, so we should plan to have a meeting tonight to help us better prepare ourselves for our meeting tomorrow. As with the previous week, most of our progress for this week and the coming week relies around getting a working pipeline that we can evaluate. We’ve decided to host all of our non-training applications on attu, using homes.cs.washington.edu to host our website.
+
+Goals for Next Week:
+
+Again, our final major issue to overcome is getting all of our individual pieces to work together. We got a lot of good feedback on our website and web scraper from the code reviews by the DeFacto team that we are going to use to improve our code quality and clarity. There’s a lot we can improve on in terms of documentation and testing that we can put more focus onto when we finally get our pipeline working. As such, we all know what our individual tasks are, but we need to find more time to get together so we can work on integration.
+
+Meeting Agenda:
+•	Questions about individual components (scraper, hosting, etc.)
+•	Questions about integration
+•	Questions about report content and formatting
