@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Get the submodules (only depth 1 needed)
-git submodule update --init --recursive --depth 1
+git submodule update --init --recursive
+
+# pip3 install pipenv
 
 # Test out the web scraper
 cd NL2BashWebScraper
