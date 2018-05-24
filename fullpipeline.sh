@@ -1,14 +1,17 @@
 #!/bin/bash
 
+# Get the submodules (only depth 1 needed)
 git submodule update --init --recursive --depth 1
 
+# Test out the web scraper
 cd NL2BashWebScraper
 (./gradlew run) &
 PID=$!
 read -p "Press enter to stop scraping. "
-kill $!
+kill $PID
 cd ..
 
+# Test out the 
 cd nl2bash_server
 pip3 install pipenv
 pipenv run python manage.py migrate
@@ -16,21 +19,22 @@ pipenv run python -m nl2bash_server.add_data_from_scraper ./test_pages/ScrapedPa
 (pipenv run python manage.py runserver) &
 PID=$!
 read -p "Press enter to stop hosting the tester ui interface. "
-kill $!
+kill $PID
 pipenv run python -m nl2bash_server.save_data
 touch all.cm
 touch all.nl
 mv -f -t ../tellina/tellina_learning_module/data/bash all.cm all.nl
 cd ..
 
+# Test table generation (commented line below are for training, which takes hours)
 cd tellina
-pip3 install -r requirements.txt
-make submodule
+pipenv install -r requirements.txt
+pipenv run make submodule
 cd tellina_learning_module
-pip3 install -r requirements.txt
-cd experiments
-# pip3 install tensorflow
-# make data
-# make train
-make decode
-make gen_auto_evaluation_table
+pipenv install -r requirements.txt
+pipenv install tensorflow
+tar xf nlp_tools/spellcheck/most_common.tar.xz --directory nlp_tools/spellcheck/
+# pipenv run make -C ./experiments train
+pipenv run make -C ./experiments data
+pipenv run make -C ./experiments decode
+pipenv run make -C ./experiments gen_auto_evaluation_table
