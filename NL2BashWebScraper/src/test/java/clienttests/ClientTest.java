@@ -10,7 +10,7 @@ public class ClientTest {
     @Test
     public void testScraper() {
         // This should error out, this is an invalid url found in the training data.
-        int retVal = MainClient.ScrapePage(
+        MainClient.ScrapeStatus retVal = MainClient.ScrapePage(
                 "https://stackoverflow.blog/2018/04/26/stack-overflow-isnt-very-welcoming-its-time-for-that-to-change/");
         assertTrue("placeholder test", retVal == MainClient.ScrapeStatus.BAD_OTHER);
 
