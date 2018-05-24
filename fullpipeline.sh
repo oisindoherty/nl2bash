@@ -3,7 +3,7 @@
 # Get the submodules (only depth 1 needed)
 git submodule update --init --recursive
 
-# pip3 install pipenv
+pip3 install pipenv
 
 # Test out the web scraper
 cd NL2BashWebScraper
@@ -15,7 +15,6 @@ cd ..
 
 # Test out the 
 cd nl2bash_server
-pip3 install pipenv
 pipenv run python manage.py migrate
 pipenv run python -m nl2bash_server.add_data_from_scraper ./test_pages/ScrapedPages
 (pipenv run python manage.py runserver) &
@@ -35,7 +34,7 @@ pipenv run make submodule
 cd tellina_learning_module
 pipenv install -r requirements.txt
 pipenv install tensorflow
-tar xf nlp_tools/spellcheck/most_common.tar.xz --directory nlp_tools/spellcheck/
+tar -xvf nlp_tools/spellcheck/most_common.tar.xz --directory nlp_tools/spellcheck/
 # pipenv run make -C ./experiments train
 pipenv run make -C ./experiments data
 pipenv run make -C ./experiments decode
