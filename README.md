@@ -28,4 +28,4 @@ In linux, execute the following:
     
 Note: you will be prompted to stop the scraping/verifying (press enter for these).
 
-The training step is very long; uncomment the lines in the last section to run training.
+The training step is very long; uncomment the line in the last section to run training.
