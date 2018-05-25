@@ -5,9 +5,11 @@ git:
 matrix:
     include:
         - language: java
-          sudo: true
+          sudo: required
           dist: precise
-          before_script: cd NL2BashWebScraper
+          before_script: 
+            - cd NL2BashWebScraper
+            - mkdir ScrapedPages
           script: sudo ./gradlew check
 
         - language: python
