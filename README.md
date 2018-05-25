@@ -29,3 +29,9 @@ In linux, execute the following:
 Note: you will be prompted to stop the scraping/verifying (press enter for these).
 
 The training step is very long; uncomment the line in the last section to run training.
+
+# Reproducing results from previous state (all.cm and all.nl)
+As the scraper and TesterUI both have components that are hard to reproduce (scraping and user
+input), the best way to reproduce results is using the output of the TesterUI, the all.cm/.nl
+files. To do this, place them in the tellina/tellina_learning_module/data folder and follow the
+instructions in the README of tellina/tellina_learning_module.

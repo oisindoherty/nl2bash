@@ -38,4 +38,4 @@ tar -xvf nlp_tools/spellcheck/most_common.tar.xz --directory nlp_tools/spellchec
 # pipenv run make -C ./experiments train
 pipenv run make -C ./experiments data
 pipenv run make -C ./experiments decode
-pipenv run make -C ./experiments gen_auto_evaluation_table
+pipenv run ./experiments/bash-token.sh --gen_auto_evaluation_table --test
