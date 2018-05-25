@@ -5,9 +5,10 @@ git:
 matrix:
     include:
         - language: java
-          before_script: cd NL2BashWebScraper
-          sudo: required
+          sudo: true
           dist: precise
+          before_script: cd NL2BashWebScraper
+          script: sudo ./gradlew check
 
         - language: python
           python: "3.6"
