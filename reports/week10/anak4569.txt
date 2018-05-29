@@ -1,0 +1,17 @@
+Abhinav Gottumukkala (anak4569)	
+
+Individual Status Report - Week 8
+
+  Copy of Last Week's Goals:
+    - Finish the Thursday assignment.
+    - (Moved to this week) try to help Hans get training done faster (+ mess around on my own).
+      - Either with the UI data (+ old?) or by cleaning the old data of bad commands.
+    - Host our version of Tellina and the TesterUI with the scraper working in the background on my cs site.
+  
+  What I've Done:
+    - The Thursday assignment was completed (final report first draft).
+    - Besides this, I've mostly just read through the feedback from Victoria.
+    
+  Goals (copied from last week, mostly):
+    - Attempt a full 100 epoch training (ours was 2/3) with at least 100 pairs.
+    - Talk to Calvin/Michael and see what can be done this late (if we need to look at cleaning).
