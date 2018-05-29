@@ -1,0 +1,11 @@
+Oisin Doherty
+oisind
+#1269085
+
+Individual Status Report – Week 10
+
+“By the end of the day today, I want to have implemented caching and a heuristic to the scraper. Ideally, we should have our full pipeline running by Wednesday and have a working implementation by Friday. As such, I want to get the web scraper into its final iteration by Tuesday so I have extra time to make any last minute changes to the output format or other integration changes on Wednesday and Thursday.”
+
+I didn’t meet my goals for Tuesday, but was able to implement caching and a basic heuristic to the scraper by Wednesday. As such, I had to add some additional tests to the test suite and create an enum for more granular status messages from our main scraping function. The heuristic I ultimately settled on was whether or not a question had an answer approved by the asker. If the asker had approved the answer, then it only seems logical that any commands within it would correctly work. Although we would lose out on any additional commands that could be posted on the same question, they would likely be similar to the existing command; more so, this drastically reduces the amount of time it takes to scrape the entirety of StackOverflow. As far as I’m aware, the output format from my scraper matches with the verification website, so we should be good to gather some final data for our final report due on this Wednesday.
+
+For the coming week, our primary goals are to write our final report for Wednesday—this primarily involves getting some final data that we can present. Next, we need to add some documentation to all parts of our software and add some additional cases to our test suites for the repository review on Friday. We will get a lot of great feedback from our previous report submission and from our code reviews that we should definitely implement in our final report and in our repository. 
