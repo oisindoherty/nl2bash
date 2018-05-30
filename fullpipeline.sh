@@ -13,8 +13,9 @@ read -p "Press enter to stop scraping. "
 kill $PID
 cd ..
 
-# Test out the 
+# Test out the server
 cd nl2bash_server
+pipenv install
 pipenv run python manage.py migrate
 pipenv run python -m nl2bash_server.add_data_from_scraper ./test_pages/ScrapedPages
 (pipenv run python manage.py runserver 0.0.0.0:12321) &
