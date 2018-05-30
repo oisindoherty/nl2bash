@@ -16,7 +16,7 @@ Meeting Agenda:
 
 Progress This Week:
 
-This week, we managed to get the pipeline working, linking together the webscraper, tester UI, and Tellina through a central server. A new set of .verify files was generated with the web scraper that were used to test the whole pipeline. The .verify files were successfully generated, and then transfered to the database on the server. We then used the tester UI to verify the commands ourselves, creating a new set of command pairs in all.nl and all.cmd files that were successfully generated. Those new command pairs were then appended to the original Tellina dataset and used to train Tellina. Thus, the whole pipeline was executed. We now are also using pipenv to run the server in a virtual environment. This lets us use a single script to start the server and test the pipeline. We also filtered the 
+This week, we managed to get the pipeline working, linking together the webscraper, tester UI, and Tellina through a central server. A new set of .verify files was generated with the web scraper that were used to test the whole pipeline. The .verify files were successfully generated, and then transfered to the database on the server. We then used the tester UI to verify the commands ourselves, creating a new set of command pairs in all.nl and all.cmd files that were successfully generated. Those new command pairs were then appended to the original Tellina dataset and used to train Tellina. Thus, the whole pipeline was executed. We now are also using pipenv to run the server in a virtual environment. This lets us use a single script to start the server and test the pipeline. We also filtered the original dataset using Tellina's filtering scripts.
 
 Goals for Next Week:
 
