@@ -1,0 +1,27 @@
+Oisin Doherty (oisind)
+Abhinav Gottumukkala (anak4569)
+Hans Jorgensen (thehans)
+Lauren Martini (lmartini)
+
+
+Team Status Report: Week 10
+
+Goals for Last Week:
+"Again, our final major issue to overcome is getting all of our individual pieces to work together. We got a lot of good feedback on our website and web scraper from the code reviews by the DeFacto team that we are going to use to improve our code quality and clarity. There’s a lot we can improve on in terms of documentation and testing that we can put more focus onto when we finally get our pipeline working. As such, we all know what our individual tasks are, but we need to find more time to get together so we can work on integration.
+
+Meeting Agenda:
+•	Questions about individual components (scraper, hosting, etc.)
+•	Questions about integration
+•	Questions about report content and formatting"
+
+Progress This Week:
+
+This week, we managed to get the pipeline working, linking together the webscraper, tester UI, and Tellina through a central server. A new set of .verify files was generated with the web scraper that were used to test the whole pipeline. The .verify files were successfully generated, and then transfered to the database on the server. We then used the tester UI to verify the commands ourselves, creating a new set of command pairs in all.nl and all.cmd files that were successfully generated. Those new command pairs were then appended to the original Tellina dataset and used to train Tellina. Thus, the whole pipeline was executed. We now are also using pipenv to run the server in a virtual environment. This lets us use a single script to start the server and test the pipeline. We also filtered the 
+
+Goals for Next Week:
+
+Our focus now is on generating as many verified command pairs as we can, and then adding them to the filetered Tellina dataset and training Tellina on that data for a final evaluation. We also recieved useful feedback from Victoria Lin that we will continue to act on. We also will continue to work on updating the final report.
+
+Meeting Agenda:
+	Questions about how we should discuss our initial approach that didn't work in the report and presentation
+	Questions about how to address the feedback from Victoria Lin about our results and discussion
