@@ -27,6 +27,7 @@ matrix:
             # pipenv: install the python packages and prepare to test the server
             - export PIPENV_IGNORE_VIRTUALENVS=1
             - pipenv install
+            - pipenv run python manage.py makemigrations
             - pipenv run python manage.py migrate
             - pipenv run python -m nl2bash_server.add_data_from_scraper test_pages/ScrapedPages
             # test the server: use & and $! to kill it eventually
