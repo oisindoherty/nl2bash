@@ -1,0 +1,17 @@
+Name: Lauren Martini
+NetID: lmartini
+nl2bash: Week 10 Individual Report
+
+Goals from Last Week:
+
+    Update the scripts that add commands to the server database to take Json files instead of the .verify files we are using now. Then, work on automating the process of feeding data from the webscraper, cleaning it with Tellina's scripts, adding the command pairs to the database, displaying those commands in the UI, and sending verified commands to Tellina's training dataset. By the end of this week, we hope to have the project components linked together and the process of running them automated.
+    Test the full system thoroughly, and work on obtaining a larger dataset to test with through the Tester UI by finding users or just using the Tester UI ourselves. We also plan to move the webscraper to run on the same server that serves the pages for the Tester UI, which I would handle.
+
+Progress this Week:
+
+    This week, I updated the tester UI to have a time_accessed field for each English command in the database, so that the tester UI will not serve the same commands to multiple users at the same time. Instead, it checks that a sufficient time has passed since a given command pair was last accessed from the database (currently 10 minutes) before presenting that command pair to another user for verification.
+ 
+Goals for Next Week:
+
+    Help to get the pipeline running, in whatever form that takes. Since I set up the web server that serves the tester UI, I will need to be involved in integrating the tester UI into the pipeline and ensuring that the pipeline script is able to successfully run the web server.
+
