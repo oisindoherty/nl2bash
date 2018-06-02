@@ -17,9 +17,9 @@ cd ..
 cd nl2bash_server
 pipenv run python manage.py migrate
 pipenv run python -m nl2bash_server.add_data_from_scraper ./test_pages/ScrapedPages
-(pipenv run python manage.py runserver 0.0.0.0:12321) &
+((pipenv run python manage.py runserver) > server.output) &
 PID=$!
-read -p "Press enter to stop hosting the tester ui interface. "
+read -p "Press enter to stop hosting the tester ui interface and save to all.cm/.nl."
 kill $PID
 pipenv run python -m nl2bash_server.save_data
 touch all.cm
