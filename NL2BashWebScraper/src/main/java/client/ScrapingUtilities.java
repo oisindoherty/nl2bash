@@ -148,7 +148,7 @@ public class ScrapingUtilities {
 						fullCommand += command.text() + " && ";
 					}
 					// Removes the last \n that we appended. (fence posting is hard)
-					fullCommand.substring(0, fullCommand.length() - 4);
+					fullCommand = fullCommand.substring(0, fullCommand.length() - 4);
 
 					// Apply the change to our ScrapedPage object.
 					JSON.setCommand(fullCommand, i);
