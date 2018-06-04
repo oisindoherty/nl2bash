@@ -123,11 +123,20 @@ public class ScrapingUtilities {
 			// Get a collection of all the answers.
 			Elements answers = stackOverflow.getElementsByClass("answer");
 			for (int i = 0; i < TOP_N_ANSWERS; i++) {
-				// Grab the container that holds the answer.
-				Element answer = answers.get(i).getElementsByClass("answercell post-layout--right").first();
+				Element answer;
+				Elements commands;
+				
+				try {
+					// Grab the container that holds the answer.
+					answer = answers.get(i).getElementsByClass("answercell post-layout--right").first();
 
-				// Grab all commands that are wrapped in a code block.
-				Elements commands = answer.getElementsByTag("pre");
+					// Grab all commands that are wrapped in a code block.
+					commands = answer.getElementsByTag("pre");
+				} catch (Exception e) {
+					JSON.setCommand(null, i);
+					break;
+				}
+				
 				if (commands.size() == 0) {
 					// If the question didn't have commands, set the command to null.
 					JSON.setCommand(null, i);
@@ -139,7 +148,7 @@ public class ScrapingUtilities {
 						fullCommand += command.text() + " && ";
 					}
 					// Removes the last \n that we appended. (fence posting is hard)
-					fullCommand.substring(0, fullCommand.length() - 4);
+					fullCommand = fullCommand.substring(0, fullCommand.length() - 4);
 
 					// Apply the change to our ScrapedPage object.
 					JSON.setCommand(fullCommand, i);
