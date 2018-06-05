@@ -33,6 +33,7 @@ The training step is very long; uncomment the line in the last section to run tr
 # Reproducing results from previous state (all.cm and all.nl)
 As the scraper and TesterUI both have components that are hard to reproduce (scraping and user
 input), the best way to reproduce results is using the output of the TesterUI, the all.cm/.nl
-files. To do this, place them in the tellina/tellina_learning_module/data/bash folder and follow the
-instructions in the README of tellina/tellina_learning_module. Our latest attempt will be in
-that folder, along with any other versions we've compared to.
+files. The resulting all.cm/.nl files have been saved in the `tellina/tellina_learning_module/data`
+directory. To reproduce the results of any of our experiments, replace the `bash` folder in that
+directory with the directory for that experiment and follow the README instructions in the
+`tellina/tellina_learning_module` directory.
