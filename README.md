@@ -1,4 +1,4 @@
-# nl2bash [![Build Status](https://travis-ci.org/oisindoherty/nl2bash.svg?branch=master)](https://travis-ci.org/oisindoherty/nl2bash)
+# NL2Bash [![Build Status](https://travis-ci.org/oisindoherty/nl2bash.svg?branch=master)](https://travis-ci.org/oisindoherty/nl2bash)
 Utilizing natural language processing to transform english requests to valid Bash commands.
 
 This repository consists of three projects, with the combined goal of providing a utility
