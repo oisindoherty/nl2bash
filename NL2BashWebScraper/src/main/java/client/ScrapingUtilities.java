@@ -6,6 +6,11 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashSet;
 
 import org.jsoup.Jsoup;
@@ -163,9 +168,26 @@ public class ScrapingUtilities {
 			System.out.println("successfuly scraped webpage.");
 
 			if (stackOverflow.getElementsByClass("vote-accepted-on").size() == 0) {
-				return ScrapeStatus.GOOD_NOCACHE;
+				try {
+					// Get the date of last activity 
+					String lastActivityString = stackOverflow.getElementById("qinfo").getElementsByClass("label-key").attr("title");
+					// Parse the date into a Java.util.Date object
+					SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+					// Get an instance of the date three months ago
+					Date lastActivity = format.parse(lastActivityString);
+					Calendar c = Calendar.getInstance();
+					c.setTime(new Date());
+					c.add(Calendar.MONTH, -3);
+					// If older than three months...
+					if (lastActivity.before(c.getTime())) {
+						return ScrapeStatus.GOOD_CACHE;
+					} else {
+						return ScrapeStatus.GOOD_NOCACHE;
+					}
+				} catch (Exception e) {
+					return ScrapeStatus.GOOD_NOCACHE;
+				}
 			}
-
 			return ScrapeStatus.GOOD_CACHE;
 		} catch (Exception e) {
 			// whoops
